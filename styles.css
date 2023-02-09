@@ -1,0 +1,406 @@
+html {
+	scroll-behavior: smooth;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+	height: 100vh;
+  }
+body{
+    background: #ffdc71;
+    margin-left: auto;
+    margin-right: auto;
+	align-items: center;
+	background-image: url(Images/Arriere-Plan.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center -100px;
+    }
+
+	header{
+		height: 100vh;
+		background-image: url(Images/couverture.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		text-align: center;
+		scroll-snap-align: center;
+	}
+	h1 {
+		font-family: 'Noto Serif Display', sans-serif;
+		color: yellow;
+		font-size: 10vw;
+		margin: auto;
+		text-shadow: 0 0 10px yellow;
+		padding-top: 180px;
+	}
+	h3 {
+		font-family: 'Noto Serif Display', sans-serif;
+		color: yellow;
+		font-size: 4vw;
+		margin: auto;
+		text-shadow: 0 0 10px yellow;
+		padding-bottom: 60px;
+	}
+	.fleche {
+		position: relative;
+		border: solid yellow;
+		border-width: 0 5px 5px 0;
+		display: inline-block;
+		padding: 3px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		margin: 0;
+		width: 8vw;
+		height: 8vw;
+		animation: vole 2s ease-out infinite;
+	}
+	@keyframes vole {
+		0% {
+		  top: -10px;
+		}
+		50% {
+		  top: 0px;
+		}
+		100% {
+			top: -10px;
+		  }
+	  }
+	/*navigation bar*/
+	nav {
+		display: flex;
+		position: fixed;
+		text-align: center;
+		top: 0px;
+		left: 10px;
+		background-color: rgba(75, 140, 83, 0.403);
+		height: 100vh;
+		float: right;
+	  }
+	  nav ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	  }
+	  nav li {
+		transition: 0.1s;
+	  }
+	  nav li:hover{
+		transform: scale(1.3);
+		transition: 0.1s;
+	  }
+	  /*--------------------*/
+    section {
+        display: flex;
+		width: 65%;
+		height: auto;
+		margin-right: auto;
+		margin-left: auto;
+		scroll-snap-align: center;
+    }
+
+/*code de codepen*/
+.box {
+    position: relative;
+	width: 25vw;
+	height: auto;
+	margin: 5em auto;
+	overflow: hidden;
+	border: 10px solid #EEE5E5;
+	outline: 5px dashed #EEE5E5;
+	animation: move-left 0.3s ease-out;
+}
+.box img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: -5px;
+	transition: all 0.3s ease-out;
+}
+.box img:hover {transform: scale(1.2, 1.2);}
+
+.box:hover img {
+	transform: scale(1.2, 1.2);
+}
+.box-text {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;padding: 10px;
+    background-image: linear-gradient( 135deg, rgba(129, 255, 239, 0.50) 10%, rgba(240, 103, 180, 0.65) 100%);
+    opacity: 1;
+	transition: 0.3s linear;
+	color: yellow;
+    text-shadow: 2px 2px 2px #333;
+}
+.box-text h2 {
+	max-width: 95%;
+	font-size: 1.8rem;
+	font-family: 'Rowdies', sans-serif;
+}
+.description {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Signika Negative', sans-serif;
+}
+.box-text:hover{opacity: 0;}
+span {
+	color: white;
+	font-size: 2.3rem;
+}
+
+/*code universe.io https://uiverse.io/Madflows/terrible-catfish-72*/
+button {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	vertical-align: middle;
+	text-decoration: none;
+	font-family: inherit;
+   }
+   
+   .description button {
+	font-weight: 600;
+	color: #382b22;
+	text-transform: uppercase;
+	padding: 0.5vw 1vw;
+	background: #fff0f0;
+	border: 2px solid #b18597;
+	border-radius: 0.75em;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+	transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+   }
+   
+   .description button::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #f9c4d2;
+	border-radius: inherit;
+	-webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+	box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+	-webkit-transform: translate3d(0, 0.75em, -1em);
+	transform: translate3d(0, 0.75em, -1em);
+	transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+   }
+   
+   .description button:hover {
+	background: #ffe9e9;
+	-webkit-transform: translate(0, 0.25em);
+	transform: translate(0, 0.25em);
+   }
+   
+   .description button:hover::before {
+	-webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+	box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+	-webkit-transform: translate3d(0, 0.5em, -1em);
+	transform: translate3d(0, 0.5em, -1em);
+   }
+   
+   .description button:active {
+	background: #ffe9e9;
+	-webkit-transform: translate(0em, 0.75em);
+	transform: translate(0em, 0.75em);
+   }
+   
+   .description button:active::before {
+	-webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+	box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+	-webkit-transform: translate3d(0, 0, -1em);
+	transform: translate3d(0, 0, -1em);
+   }
+/*fin code universe.io*/
+
+.description-invisible {
+    display: none;
+}
+
+.description-visible {
+    position: relative;
+	width: 45%;
+	height: auto;
+	margin: 5em auto;
+	overflow: hidden;
+	border: 10px solid #EEE5E5;
+	outline: 5px dashed #EEE5E5;
+    background-color: #EEE5E5;
+    margin-left: 20px;
+	animation: move-left 0.3s ease-out;
+
+}
+.box-description{
+	animation: move-right 0.3s ease-out;
+}
+@keyframes move-left {
+	0% {
+		opacity: 0;
+	  left: -100px;
+	}
+	100% {
+		opacity: 1;
+	  left: 0px;
+	}
+  }
+  @keyframes move-right {
+	0% {
+	  right: -100px;
+	}
+	100% {
+	  right: 0px;
+	}
+  }
+  /*-------formulaire---------*/
+.look {
+	position: absolute;
+	right: 20%;
+}
+.looktxt {
+	position: absolute;
+	right: 1%;
+	font-family: 'Kalam', sans-serif;
+	font-size: 1.2rem;
+	color: rgb(115, 157, 115);
+}
+form {
+	position: relative;
+	background-color: rgb(255, 238, 205);
+	width: 65vw;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+	overflow: hidden;
+	border: 10px solid rgb(255, 238, 205);
+	outline: 5px dashed rgb(255, 238, 205);
+	scroll-snap-align: center;
+}
+h4 {
+	font-family: 'Cairo', sans-serif;
+	font-size: 1.5rem;
+}
+form p {
+	font-family: 'Cairo', sans-serif;
+}
+fieldset {
+	border: none;
+	margin-bottom: 20px;
+}
+.Afficher {
+	background-color: rgb(255, 158, 149);
+	color: rgb(255, 251, 205);
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+}
+.Afficher:hover {
+	transform: scale(1.1);
+	border: solid ;
+}
+.envoyer {
+	background-color: rgb(124, 163, 124);
+	color: rgb(255, 251, 205);
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	margin: 10px;
+}
+.envoyer:hover {
+	transform: scale(1.1);
+	border: solid ;
+}
+form textarea {
+	background-color: rgb(255, 246, 231);
+	border: solid;
+	max-width: 20vw;
+	min-width: 20vw;
+	min-height: 15px;
+	max-height: 100px;
+}
+form input {
+	background-color: rgb(255, 238, 205);
+	border: none;
+	border-bottom: solid;
+	max-width: 15vw;
+}
+.visualisation-invisible {
+	display: none;
+}
+.si {
+	font-family: 'Rowdies', sans-serif;
+}
+.info-perso {
+	font-family: 'Cairo', sans-serif;
+}
+.info {
+	border: solid;
+	background-color: rgb(255, 246, 231);
+}
+/*--------footer-------*/
+footer {
+	scroll-snap-align: center;
+	padding: 30px;
+	
+}
+.mentions {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: fixed;
+	padding: 10px;
+	border: 3px solid #406f3e;
+	background-color: #fff4d6;
+	border-radius: 10px;
+	top: 3%;
+	left: 20%;
+	right: 20%;
+	bottom: 3%;
+}
+.mentions-invisible {
+	display: none;
+}
+li {
+	font-family: 'Cairo', sans-serif;
+}
+.mentionsEtBouton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.mention-bouton,.top {
+	background-color: #ffdc71;
+}
+.top {
+	display: flex;
+	margin: auto;
+}
+.AncreTop {
+	text-decoration: none;
+}
+.fermer-mentions {
+	background-color: #fff4d6;
+}
+footer input {
+	margin: 5px;
+	padding: 5px 10px 5px 10px;
+	border-color: rgb(113, 184, 114);
+	transition: 0.3s;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+}
+footer input:hover {
+	background-color: #406f3e;
+	transition: 0.3s;
+}
