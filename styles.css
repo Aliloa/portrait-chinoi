@@ -8,7 +8,7 @@ body{
     background: #ffdc71;
     margin-left: auto;
     margin-right: auto;
-	background-image: url(/Images/Arriere-Plan.png);
+	background-image: url(Images/Arriere-Plan.png);
 	align-items: center;
 	background-size: cover;
 	background-attachment: fixed;
