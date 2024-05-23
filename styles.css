@@ -16,7 +16,6 @@ body{
 
 	header{
 		height: 100vh;
-		background-image: url(Images/couverture.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
