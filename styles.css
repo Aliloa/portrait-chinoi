@@ -68,6 +68,7 @@ body{
 	/*navigation bar*/
 	nav {
 		display: flex;
+		display: none;
 		position: fixed;
 		text-align: center;
 		top: 0px;
