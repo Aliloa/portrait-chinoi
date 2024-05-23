@@ -25,6 +25,8 @@ body{
 		align-items: center;
 	}
 	h1 {
+		position: relative;
+		text-transform: uppercase;
 		font-family: 'Noto Serif Display', sans-serif;
 		font-family: "Courier Prime", monospace;
 		color: white;
@@ -35,6 +37,7 @@ body{
 		animation-delay: 1s;
 	}
 	h3 {
+		position: relative;
 		font-family: 'Noto Serif Display', sans-serif;
 		font-family: "Courier Prime", monospace;
 		color: white;
@@ -46,11 +49,11 @@ body{
 		animation-delay: 1s;
 	}
 	.image {
+		position: relative;
 		width: 50%;
 		max-width: 200px;
 		min-width: 80px;
 		animation: vole 2s ease-out infinite;
-		animation-delay: 0.5s;
 	}
 	.fleche {
 		position: relative;
