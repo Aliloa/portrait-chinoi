@@ -1,8 +1,5 @@
 html {
 	scroll-behavior: smooth;
-	overflow: auto;
-	scroll-snap-type: y mandatory;
-	height: 100vh;
   }
 body{
     background: #ffdc71;
@@ -22,13 +19,17 @@ body{
 		background-attachment: fixed;
 		text-align: center;
 		scroll-snap-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	h1 {
 		font-family: 'Noto Serif Display', sans-serif;
 		font-family: "Courier Prime", monospace;
 		color: white;
 		font-size: 10vw;
-		margin: auto;
+		margin: 0;
 		text-shadow: 0 0 10px #ff9c00;
 		padding-top: 180px;
 	}
@@ -37,9 +38,10 @@ body{
 		font-family: "Courier Prime", monospace;
 		color: white;
 		font-size: 4vw;
-		margin: auto;
+		margin: 0;
 		text-shadow: 0 0 10px #ff9c00;
 		padding-bottom: 60px;
+		margin-bottom: 25px;
 	}
 	.image {
 		width: 5vw;
@@ -50,7 +52,6 @@ body{
 		position: relative;
 		border: solid white;
 		border-width: 0 5px 5px 0;
-		display: inline-block;
 		padding: 3px;
 		transform: rotate(45deg);
 		-webkit-transform: rotate(45deg);
