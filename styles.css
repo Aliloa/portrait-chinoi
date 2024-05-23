@@ -29,7 +29,7 @@ body{
 		color: white;
 		font-size: 10vw;
 		margin: auto;
-		text-shadow: 0 0 10px yellow;
+		text-shadow: 0 0 10px #ff9c00;
 		padding-top: 180px;
 	}
 	h3 {
@@ -38,8 +38,13 @@ body{
 		color: white;
 		font-size: 4vw;
 		margin: auto;
-		text-shadow: 0 0 10px yellow;
+		text-shadow: 0 0 10px #ff9c00;
 		padding-bottom: 60px;
+	}
+	.image {
+		width: 5vw;
+		max-width: 200px;
+		min-width: 80px;
 	}
 	.fleche {
 		position: relative;
